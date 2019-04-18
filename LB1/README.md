@@ -1,7 +1,7 @@
 ***  
 ***
 # Dokumentation LB 1
-**Zum Modul 300 von Marius Rutz**
+**Zum Modul 300 von Nicola Leuthold mit Unterstüzung von Marius Rutz**
 ***  
 ## Inhaltsverzeichnis
 
@@ -19,23 +19,23 @@
 ## Persönlicher Wissensstand
 
 **Linux**  
-In Modulen an der TBZ spärlich genutzt. Auf privaten Computern verwende ich Ubuntu.
+In Modulen an der TBZ eher selten genutzt.
 Im Geschäfft verwenden wir Windows.  
 **Virtualisierung**  
-VMware im Geschäfft und in der Schule verwendet. Aktuell den ÜK zum Thema absolviert. In der Schule in diversen Modulen genutzt.  
+VMware im Geschäfft und in der Schule verwendet. In der Schule in diversen Modulen genutzt.  
 **Vagrant**  
-Noch nie benutzt vor M300.  
+Noch unbekannt  
 **Versionsverwaltung / Git**  
 Keine.  
 **Systemsicherheit**  
 Wenig Erfahrung im Konfigurieren von Firewalls. 
 **Mark Down**
-Keine
+Noch unbekannt
 
 ***
 ## Lernumgebung
 **Git**  
-Gemäss Anleitung im M300 Reppository:  
+Gemäss Anleitung im M300 Repository:  
 *Github*  
   1. Auf www.github.com ein Benutzerkonto erstellen (Angabe von Username, E-Mail und Passwort)
   2. E-Mail zur Verifizierung des Kontos bestätigen und anschliessend auf GitHub anmelden
@@ -51,12 +51,12 @@ Gemäss Anleitung im M300 Reppository:
 1. Git-2.20.1-64-bit.exe als Administrator ausführen.  
 2. Standardwerte wurden während der Installation verwenden.  
 3. Öffnen und Konfiguration mit:  
- >$ git config --global user.name "<Payreno>"  
- >$ git config --global user.email "<marius.rutz@protonmail.ch>"  
+ >$ git config --global user.name "<nicola-leuthold>"  
+ >$ git config --global user.email "<nicola-leuthold@bluewin.ch>"  
 
 *SSH Key*  
 1. Im Terminal:  
-  >ssh-keygen -t rsa -b 4096 -C "marius.rutz@protonmail.ch"  
+  >ssh-keygen -t rsa -b 4096 -C "nicola-leuthold@bluewin.ch"  
   >Enter a file in which to save the key (~/.ssh/id_rsa): [Press enter]  
   >Enter passphrase (empty for no passphrase): []  
   >Enter same passphrase again: []
@@ -72,7 +72,7 @@ Modulrepo:
   > git status
      
 Meinrepo:  
-  >git clone git@github.com:Payreno/M300.git  
+  >git clone https://github.com/nicola-leuthold/M300-Services/  
   > git pull --> Um zu aktualisieren  
   > git status --> Um  Status der lokalen Kopie anzuzeigen  
 
@@ -82,7 +82,7 @@ Für die Verwendung im Modul reicht die Installation mit Standardwerten.
 
 **Vagrant**  
 Vagrant ermöglicht es, dass ich in Virtualbox automatisiert eine VM mit Service installieren kann.  
-Für die Verwendung im Modul reicht die Installation mit Standardwerten.  
+Für die Verwendung im Modul reicht die Standardinstallation.  
 
 *Nützliche Befehle:*  
 
@@ -107,7 +107,7 @@ VM zerstören
 
 **Visualstudio Code**  
 Visualstudio Code ist ein Editor von Microsoft. Es ist möglich ein Repository darin zu öffnen und Änderungen gleich zu pushen.  
-Für die Verwendung im Modul reicht die Installation mit Standardwerten.  
+Für die Verwendung im Modul reicht die Standardinstallation.  
 Zusätzlich instalierte folgende 3 vorgegebenen Extensions:
 
 * Markdown All in One

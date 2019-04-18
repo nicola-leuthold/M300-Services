@@ -10,10 +10,10 @@ Vagrant.configure("2") do |config|
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
 
-
+	#Diese VM-Box wird für den Webserver verwendet
   config.vm.box = "ubuntu/xenial64"
   # Create a private network, which allows host-only access to the machine
-  # Für mich definierte IP wird konfiguriert.
+  # Eine fixe IP geben.
   config.vm.network "private_network", ip: "10.71.13.12"
 
 
@@ -22,8 +22,8 @@ Vagrant.configure("2") do |config|
   # your network.
   # config.vm.network "public_network"
   
-  #Es wird aus dem aktuellen Ordner ein shared Folder gemacht, der unter /var/www/html eingehängt wird.
-  #das Index-FIle kann in dem gleichen Ordner abgelegt werden, somit bzeiht der Webserver diesen Index.
+  #Der aktuelle Ordner wird unter /var/www/html als Share Folder eingehängt
+  #das Index-File wird auch dort abegelgt, somit kann dies gleich bezogen werden
   config.vm.synced_folder ".", "/var/www/html"  
 
 #Virtualbox wird als VMprovider genutzt
@@ -33,7 +33,7 @@ Vagrant.configure("2") do |config|
     vb.memory = "4024"
   end
 
-  #Install Apache2 und ufw. ufw erlaubt ssh, http und IPs vom 24-Netz 10.71.13.0.
+  #Install Apache2 und ufw. ufw erlaubt ssh, http und IPs im 24-Netz 10.71.13.0.
     config.vm.provision "shell", inline: <<-SHELL
      apt-get update
      apt-get install -y apache2
@@ -42,7 +42,7 @@ Vagrant.configure("2") do |config|
      ufw allow ssh
      ufw allow http
      ufw allow from 10.71.13.0/24
-	# Es muss neugestartet werden, dabei muss die Firewall manuell eingeschaltet werden. Somit muss man beim Startup mit Y bestätigen
+	# Nachdem Neustart muss die Firewall manuell aktiviert werden. Dies mit "y" während des Startup bestätigen
      yes Y | ufw enable
   SHELL
 end
