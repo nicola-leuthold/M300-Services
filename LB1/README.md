@@ -131,7 +131,7 @@ Damit beim Dateien mit den Endungen .git / .svn / .hg / .vagrant / .DS_store nic
 ##  Vorgefertigte VM mit Vagrant aufsetzen
 
 Aus dem M300 Repository, setzte ich automatisiert eine Ubuntu VM mit Apache2 auf.
-Dazu musste ich nur in das Verzeichnis /M300/vagrant/web wechseln und "vagrant up" ausführen. 
+Um diese Vm zu starten muss ich ins Verzeichnis /M300/vagrant/web wechseln mit dem Befehl "CD" und anschliessend "vagrant up" ausführen. 
 Die VM wird daraufhin installiert und in Virtualbox angezeigt.  
 ![M300](pictures/web)
 
@@ -149,7 +149,7 @@ Es wird ubuntu xenial64 als Basis verwendet.
   >Vagrant.configure("2") do |config|  
   >config.vm.box = "ubuntu/xenial64"
 
-Es wird ein privates Netzerk erstellt. (Host Only) Die IP gemäss Vorgabe ist 10.71.13.12.  
+Es wird ein privates Netzerk erstellt. (Host Only) Die IP lautet 10.71.13.12.  
 Für mich definierte IP wird konfiguriert.  
   >config.vm.network "private_network", ip: "10.71.13.12"
 
@@ -241,11 +241,13 @@ Auf der Firewall konnte ich spezifische Ports definieren um gewünschte Services
 **Mark Down**  
 Ich lernte eine Dokumentation mit Mark Down zu erstellen.
 ***  
-## Reflexion
+## Reflexion/Rückblick
 
-Zu Beginn hatte ich Schwierigkeiten mit dem Verständniss der Funktionsweise von Vagrant. Um das Projekt umzusetzen musste ich zuerst Realisieren, wie Vagrantfile und Box zusammenspielen. Um so mehr Freude bereitete es mir das Vagrantfile dann nach meinen Wünschen zu konfigurieren und zu sehen wie die VM automatisiert aufgesetzt wird.
-Leider blieb so nicht genug Zeit um eine Komplexere Konfiguration umzusetzen. Bei der nächsten LB werde ich dieses Problem nicht mehr haben und somit hoffentlich mehr Zeit mit der Konfiguration verbrinden können.  
-Zu spät angefangen habe ich mit der Mark Down Dokumentation. Zu Beginn des Moduls hatte ich das Aufsetzen der Tool-Umgebung in Google-Docs dokumentiert. Diese Dokumentation musste ich dann in Mark Down nochmals machen. Hätte ich zu Beginn mit Mark Down gearbeitet, wäre mir diese Arbeit erspart geblieben.
+Leider konnte ich nur an der ersten Lektion dieses Modules teilnehmen, da ich anschliessend 6 Wochen die Schule aufgrund eines Unfalls nicht mehr besuchen konnte.
+Jedoch wurde mir die Chance gegeben dieses Modul Zuhause nachzuholen. Dies versuchte ich so gut wie möglich alleine zuerst, zudem hatte ich die Unterstüzung meiner Freunde, Marius Rutz und Yanik Vonderschmitt.
+Ich wollte diese LB nicht einfach gemacht haben sonder diese auch verstanden haben. Hierbei konnte mit Marius helfen indem wir einen Abend die LB1 zusammen bearbeitet haben und er mir dabei 
+Vagrant, Visualstudio und Virtualbox erklärte. Somit habe ich die Arbeit auch verstanden und nicht nur kopiert. Mark Down erschwerte mir die eschicchte auch ein wenig, 
+hier konnte mir YAnik aushelfen. Dies ist auch weniger eine Reflexion und mehr ein Rückblicke und ich bin dankbar für die Unterstüzung und das ich das Modul trotz des Unfalls abschliessend kann.
 
 ## Quellen
 
