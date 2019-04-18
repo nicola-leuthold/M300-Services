@@ -222,22 +222,19 @@ Vom Client ist der Webserver über HTTP erreichbar und zeigt das im Vagrant Ordn
 ## Wissenzuwachs
 
 **Linux**  
-Ich habe die Tool-Umgebung auf Ubuntu Linux installiert und verwendet.
+Ich kenne die Tool-Umgebung auf Ubuntu Linux besser und kann diese installiert und verwendet.
 Dadurch konnte ich mich üben im  navigieren über die Konsole.
 Die Befehle zur Installation von Software kannte ich bereits.  
 
 **Virtualisierung**  
-Die verwendete Virtualisierungssoftware und konfiguration kannte ich .bereits.  
+Die verwendete Virtualisierungssoftware lernte ich zu verwenden und konfigurieren.  
 
 **Vagrant**  
-Ich lernte eine Vagrantumgebung aufzusetzen und ein Vagrantfile zu konfigurieren, aus welchem ich dann automatisiert eine VM aufsetzen lassen kann.    
+Ich lernte eine Vagrantumgebung aufzusetzen und ein Vagrantfile zu schreiben, aus welchem ich dann automatisiert eine VM aufsetzen lassen kann.    
 
 **Versionsverwaltung / Git**  
 Ich lernte ein Repository zu Erstellen, Klonen und lokal gemachte Änderungen zu commiten und pushen.
 
-**Systemsicherheit**  
-Ich konnte per SSH die Verbindung mit der VM herstellen.  
-Auf der Firewall konnte ich spezifische Ports definieren um gewünschte Services zuzulassen.  
 **Mark Down**  
 Ich lernte eine Dokumentation mit Mark Down zu erstellen.
 ***  
