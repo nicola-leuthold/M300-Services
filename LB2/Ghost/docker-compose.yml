@@ -1,28 +1,27 @@
-version: '3.1'
+version: '3.1'                                #Docker-Compose Version 
 
-services:
+services:                                      #Auflistng der Services 
 
-  ghost:
-    image: ghost:1-alpine
-    restart: always
-    ports:
+  ghost:                                       #Ghost-Service
+    image: ghost:1-alpine                      #image wird festgelegt
+    container_name: ghost                      #container_name 
+    restart: always                            #Nachdem erstellen Neustarten
+    ports:                                     #Verwendete Ports definieren
       - 8080:2368
     environment:
       database__client: mysql
       database__client: mysql
-      database__connection__host: db
-      database__connection__user: root
-      database__connection__password: example
-      database__connection__database: ghost
+      database__connection__host: mySQL        #Verlinkung zur Datenbank 
+      database__connection__user: User         #Benutzername festlegen 
+      database__connection__password: Qawsed123 #Benutzerpasswort festlegen 
+      database__connection__database: ghost    #Service festlegen zu welchem sich die Datenbamnk verbinden muss
 
-  db:
-    image: mysql:5.7
-    restart: always
+  mySQL:
+    image: mysql:5.7                           #image wird festgelegt
+    restart: always                            #Nachdem erstellen Neustarten
+    container_name: mySQL                      #container_name
     environment:
-      MYSQL_ROOT_PASSWORD: example
+      MYSQL_ROOT_PASSWORD: Qawsed123
 
-
-volumes:                                  # Anfang Volume
-  db_data: {}                             # Neues Volume
 networks:                                 # Anfang allgemeine Netzwerkkonfiguration
   Net1:                                   # Netzwerk Net1 erstellt
